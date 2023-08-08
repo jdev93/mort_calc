@@ -1,6 +1,6 @@
 function App() {
   return (  
-    <div className="container flex justify-center m-auto mt-5">
+    <div className="grid h-screen place-content-center">
       <Body/> 
       </div>
       );
@@ -8,17 +8,14 @@ function App() {
 
 function Header(){
   return (
-    <p className ="text-mycolor text-3xl my-5">Mortgage Calculator</p>
+    <p className ="text-mycolor text-3xl my-5 font-sans">Mortgage Calculator</p>
   )
 }
 
 function Body(){
   return (
-    <div className ="bg-teal-700 font-bold p-6 rounded">
-      <Header/>
-      <p className ="text-white text-lg">
-        ReactJS + TailwindCSS
-      </p>
+    <div className ="w-96 bg-gradient-to-r from-gray-400 to-gray-500 font-bold p-6 rounded">
+      <Header/>      
     </div>
   )
 }
