@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello world!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (  
+    <div className="container flex justify-center m-auto mt-5">
+      <Body/> 
+      </div>
+      );
 }
+
+function Header(){
+  return (
+    <p className ="text-mycolor text-3xl my-5">Mortgage Calculator</p>
+  )
+}
+
+function Body(){
+  return (
+    <div className ="bg-teal-700 font-bold p-6 rounded">
+      <Header/>
+      <p className ="text-white text-lg">
+        ReactJS + TailwindCSS
+      </p>
+    </div>
+  )
+}
+
+
 
 export default App;
